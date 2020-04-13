@@ -1,0 +1,31 @@
+</div><!--content-->
+
+
+    
+    </div><!--wrapper-->
+
+  </body>
+  <footer>
+    <script>
+      function onReady(callback) {
+        var intervalID = window.setInterval(checkReady, 150);
+
+        function checkReady() {
+          if (document.getElementsByTagName('body')[0] !== undefined) {
+              window.clearInterval(intervalID);
+              callback.call(this);
+          }
+        }
+      }
+
+      function show(id, value) {
+        document.getElementById(id).style.display = value ? 'block' : 'none';
+      }
+
+      onReady(function () {
+        show('wrapper', true);
+        show('loading', false);
+      });
+    </script>
+  </footer>
+</html>

@@ -1,0 +1,98 @@
+* {
+      font-family: "Open Sans";
+      box-sizing: border-box;
+      text-decoration: none;
+}
+
+html {
+      height: 100%;
+      width: 100%;
+}
+
+body {
+      background: #0a5059;
+      background: linear-gradient(30deg, #1b5668, #0a5059, #9b5659);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+}
+
+h2 {
+      font-size: 24px;
+      margin: 55px 0 25px 0;
+      color: white;
+}
+
+.box {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.review-logo {
+  width: auto;
+  margin-top: -50px;
+}
+
+@media only screen and (max-width: 601px) {
+  .review-logo {
+    width: 80%;
+  }
+}
+
+.buttons {
+      margin: 20px auto 0 auto;
+      text-align: center;
+      justify-content: center;
+      font-size: 18px;
+      padding: 15px 0 15px 0;
+      border-radius: 50px;
+      color: white;
+      font-weight: bold;
+      transition: all .3s;
+}
+
+@media only screen and (min-width: 768px) {
+  .buttons {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .buttons {
+    width: 70% !important;
+  }
+}
+
+.buttons:hover {
+      background-color: black;
+}
+
+.g {
+      background-color: #449ff4;
+}
+
+.f {
+      background-color: #5173b3;
+}
+
+.a {
+      background-color: #E16D57;
+}
+
+footer {
+      position: absolute;
+      bottom: 10px;
+}
+
+@media only screen and (max-width: 430px) {
+  .buttons {
+    min-height: 50px;
+  }
+}

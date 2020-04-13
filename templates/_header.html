@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+
+    <base href="{global.baseUrl}" />
+
+    <title>{head.title} | {global.appName}</title>
+    <meta name="description" content="{head.description}">
+
+    <link type="image/x-icon" rel="icon" href="favicon.ico">
+    <script type="text/javascript" charset="utf-8" src="public/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/app.css" />
+
+  </head>
+    <body class="{body.class}">
+      <div id="loading">
+        <h1 class="loadingtext">Loading</h1><span class="floaty"></span><span class="floaty"></span><span class="floaty"></span>
+      </div>
+      <div id="wrapper">
+
+      <div class="header {body.class}">
+
+        <!--<a class="logo" href="/">
+          <img src="public/logo.png" alt="Logo" />
+        </a>-->
+
+        <ul class="menu">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li class="loggedOut">
+            <a href="/account/create">Signup</a>
+          </li>
+          <li class="loggedOut">
+            <a href="/session/create">Login</a>
+          </li>
+          <li class="loggedIn">
+            <a href="/send">Send Invite</a>
+          </li>
+          <li class="loggedIn">
+            <a href="/account/edit">Account Settings</a>
+          </li>
+          <li class="loggedIn">
+            <a href="#" id="logoutButton">Logout</a>
+          </li>
+        </ul>
+
+        <div class="clear"></div>
+      </div>
+
+
+      <div class="content">

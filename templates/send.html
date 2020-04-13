@@ -1,0 +1,59 @@
+<div class="top-buttons top1">
+  <div id="ajax-trigger" class="buttons">Refresh Table</div>
+  <div id="download-csv" class="buttons">Download Data</div>
+</div>
+
+<div class="data-box order-box hide">
+
+  <div id="example-table"></div>
+
+  <div id="send-section">
+    <div class="form_box">
+      <h3 class="left-title">Send Invite</h3>
+      <form id="send-twiml" onsubmit="return sendTwiml()">
+        <fieldset class="twiml-form">
+
+          <input class="form_inputs" type="text" name="n" id="first-name" required placeholder="Name">
+          <input class="form_inputs" type="text" pattern="[0-9]{10}" name="p" maxlength="10" id="phone-number" placeholder="Phone">
+          <input class="form_inputs" type="email" name="e" id="email-address" placeholder="Email">
+          <h3 class="field-titles">Location:</h3>
+          <div class="switch-field">
+            <input type="radio" id="switch_3_left" name="l" value="location1" required/>
+            <label for="switch_3_left">Location 1</label>
+            <input type="radio" id="switch_3_center" name="l" value="location2" />
+            <label for="switch_3_center">Location 2</label>
+            <input type="radio" id="switch_3_right" name="l" value="location3" />
+            <label for="switch_3_right">Location 3</label>
+          </div>
+
+          <hr>
+          <h3 class="field-titles templates-title">Start message with:</h3>
+
+          <div class="templates">
+            <div id="review-inv-a" class="buttons">Location 1 Invitation</div>
+            <div id="review-inv-m" class="buttons">Location 2 Invitation</div>
+            <div id="review-inv-s" class="buttons">Location 3 Invitation</div>
+            <div id="review-followup" class="buttons">Invitation Follow Up</div>
+          </div>
+
+          <div>
+            <textarea name="custom_msg" id="custom-msg-box"></textarea>
+          </div>
+          <br>
+          <button class="submit-button buttons" value="Submit">SEND</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <script type="text/javascript" src="public/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="public/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="public/moment.min.js"></script>
+  <script type="text/javascript" src="public/tabulator.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/tabulator.min.css">
+  <link rel="stylesheet" href="public/send.css">
+</footer>

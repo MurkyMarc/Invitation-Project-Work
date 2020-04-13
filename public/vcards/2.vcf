@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//Vcard Extended Class from carlos.alcala@upandrunningsoftware.com//NONSGML Version 1//EN
+REV:2018-03-08 18:23:17
+FN:Title 2
+N:;Name 2;;;
+
+ADR;TYPE=Address:;;Address 2;;;;
+ADR;TYPE=Address:;;Orlando, Fl.;;;00000;
+EMAIL;TYPE=Email,pref:email@email.com
+TEL;TYPE=Work,voice:000-000-0000
+URL;TYPE=HomePage:http://www.website.com
+PHOTO;ENCODING=b;TYPE=JPEG:/
+TZ:-0500
+END:VCARD
